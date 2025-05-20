@@ -1,74 +1,80 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# React Clothing E‑Commerce 🛍️
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **React 18** single‑page application that mimics a modern clothing boutique.  Built from scratch with functional components, hooks, and **Sass** styling—perfect for learning component architecture, reusable UI patterns, and responsive design.
 
-## Available Scripts
+> **Status:** Early prototype (category showcase).  Cart, checkout, and user auth are on the roadmap.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features (so far)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Module                 | What it does                                                 | Source                              |
+| ---------------------- | ------------------------------------------------------------ | ----------------------------------- |
+| **Category Directory** | Renders a responsive grid of shop categories with hover zoom | `src/components/category-directory` |
+| **Category Item**      | Individual tile with background image + overlay title        | `src/components/category-item`      |
+| **Global Styles**      | Basic flexbox layout & animations, written in **SCSS**       | `src/*.css / *.scss`                |
+| **React‑Router ready** | Directory items are set up to navigate to future routes      | `src/App.js`                        |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🏗️  Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* **React 18** w/ functional components & hooks
+* **Sass (1.77+)** for nesting + variables
+* **Create React App** scaffolding (no eject)
 
-### `npm run build`
+> The goal is to later add **Context API** (or Redux Toolkit) for cart state, **Firebase** for Auth + Firestore, and **Stripe** for payments.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🚀 Getting Started
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# 1 Clone
+ git clone https://github.com/sagarkpatil3/React_Clothing_E_Commerce.git
+ cd React_Clothing_E_Commerce
 
-### `npm run eject`
+# 2 Install deps
+ npm install   # or yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 3 Run dev server
+ npm start     # http://localhost:3000
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> Live‑reload is enabled—edit any component and the browser refreshes automatically.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🗂️ File Structure (key bits)
 
-## Learn More
+```
+src/
+├── App.js                 # Root component
+├── App.css
+└── components/
+    ├── category-directory/
+    │   ├── category-directory.component.jsx
+    │   └── category-directory.styles.scss
+    └── category-item/
+        ├── category-item.component.jsx
+        └── category-item.styles.scss
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🛣️  Roadmap
 
-### Code Splitting
+* [ ] **Shop pages** – product grid, filters, & pagination
+* [ ] **Cart** – Context provider, add/remove items, persisted to `localStorage`
+* [ ] **User Auth** – Google sign‑in via Firebase Authentication
+* [ ] **Checkout** – Stripe test mode integration
+* [ ] **Responsive tweaks** – mobile first media queries & lazy‑loaded images
+* [ ] **Unit tests** – React Testing Library & Jest
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Pull requests welcome—feel free to fork and improve! 🙌
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 📜  License
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# React_Clothing_E_Commerce
->>>>>>> 12ed961 (Initial commit)
+This project is licensed under the **MIT License**.  See `LICENSE` for details.
